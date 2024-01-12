@@ -31,17 +31,21 @@ Este laberinto tiene dimensiones 3 x 3 y la probabilidad de que llegue a la sali
 Una vez establecida la nueva posición de la rana, habrá que comprobar si se encuentra sobre un espacio vacío, sobre un túnel, sobre una mina, o sobre una salida.
 
 *ESPACIO VACIO*
+
 En caso de que sea un espacio vacío procederá a moverse a otro lugar aleatorio siempre que no exceda el número máximo de iteraciones
 
 *TÚNEL*
+
 En el caso de que se encuentre sobre un túnel, mirará las coordenadas de salida correspondiente.
 Se establecerá la nueva posición de la rana con la correspondiente a la salida del túnel.
 
 *MINA*
+
 En el caso de que se encuentre sobre una mina, procederá a terminar dicho intento.
 Se establecerá de nuevo la posición inicial y comenzará el siguiente intento.
 
 *SALIDA*
+
 En el caso de que se encuentre sobre la salida, procederá a terminar dicho intento con la peculiaridad de que se sumará en uno el número de intentos válidos, que servirá para después calcular la probabilidad
 
 ### Cálculo de Probabilidad
